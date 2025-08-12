@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <title>Weather Terminal</title>
+</head>
+<body>
+  <div class="terminal-window">
+    <div class="terminal-header">
+      <div class="terminal-buttons">
+        <span class="btn close"></span>
+        <span class="btn minimize"></span>
+        <span class="btn maximize"></span>
+      </div>
+      <div class="terminal-title">weather@dev:~$</div>
+    </div>
+    
+    <div class="terminal-content">
+      <div class="search-section">
+        <span class="prompt">weather@dev:~$ </span>
+        <input type="text" class="search-input" placeholder="Enter city name..." spellcheck="false">
+        <button class="search-btn">⏎</button>
+      </div>
+      
+      <div class="error-message">
+        <span class="error-text">Error: City not found</span>
+      </div>
+      
+      <div class="weather-output">
+        <div class="weather-header">
+          <span class="location">Location: </span><span class="city-name">London</span>
+        </div>
+        
+        <div class="weather-main">
+          <div class="temp-display">
+            <span class="temp-value">22</span><span class="temp-unit">°C</span>
+          </div>
+          <div class="weather-desc">
+            <span class="condition">Clear</span>
+          </div>
+        </div>
+        
+        <div class="weather-details">
+          <div class="detail-item">
+            <span class="label">Humidity:</span>
+            <span class="value humidity">50%</span>
+          </div>
+          <div class="detail-item">
+            <span class="label">Wind:</span>
+            <span class="value wind">15 km/h</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <script src="index.js"></script>
+</body>
+</html>
